@@ -157,11 +157,11 @@ export default function StickyScroll() {
           {steps.map((step, index) => (
             <div
               key={step.id}
-              className="scroll-panel min-h-screen flex items-center px-8 lg:px-16 py-24"
+              className="scroll-panel min-h-[50vh] lg:min-h-screen flex items-center px-6 md:px-8 lg:px-16 py-12 lg:py-24"
             >
-              <div className="max-w-lg">
-                {/* モバイル用ビジュアル */}
-                <div className="lg:hidden mb-8 w-48 h-48 mx-auto">
+              <div className="max-w-lg w-full">
+                {/* モバイル・タブレット用ビジュアル */}
+                <div className="lg:hidden mb-6 w-28 h-28 sm:w-36 sm:h-36 md:w-40 md:h-40 mx-auto">
                   {step.visual}
                 </div>
 
@@ -169,20 +169,20 @@ export default function StickyScroll() {
                   Step {String(step.id).padStart(2, '0')}
                 </span>
 
-                <span className="text-gray-400 text-sm tracking-wider block mb-4">
+                <span className="text-gray-400 text-sm tracking-wider block mb-3">
                   {step.subtitle}
                 </span>
 
-                <h3 className="text-4xl md:text-5xl lg:text-6xl font-extralight text-gray-800 mb-6 tracking-tight">
+                <h3 className="text-3xl md:text-4xl lg:text-6xl font-extralight text-gray-800 mb-4 lg:mb-6 tracking-tight">
                   {step.title}
                 </h3>
 
-                <p className="text-gray-600 text-lg leading-relaxed">
+                <p className="text-gray-600 text-base lg:text-lg leading-relaxed">
                   {step.description}
                 </p>
 
                 {/* 装飾ライン */}
-                <div className="mt-8 flex items-center gap-4">
+                <div className="mt-6 lg:mt-8 flex items-center gap-4">
                   <div className="w-16 h-px bg-gradient-to-r from-emerald-800/30 to-transparent" />
                   <span className="text-emerald-800/40 text-xs">
                     {index + 1} / {steps.length}
