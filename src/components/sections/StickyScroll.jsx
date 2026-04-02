@@ -14,14 +14,14 @@ const steps = [
       <svg viewBox="0 0 400 400" className="w-full h-full">
         <defs>
           <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#1e4d4a" stopOpacity="0.2" />
-            <stop offset="100%" stopColor="#1e4d4a" stopOpacity="0.05" />
+            <stop offset="0%" stopColor="#c41e2a" stopOpacity="0.2" />
+            <stop offset="100%" stopColor="#c41e2a" stopOpacity="0.05" />
           </linearGradient>
         </defs>
         <circle cx="200" cy="200" r="150" fill="url(#grad1)" />
-        <circle cx="200" cy="200" r="100" fill="none" stroke="#1e4d4a" strokeWidth="1" strokeDasharray="4,4" opacity="0.3" />
-        <circle cx="200" cy="200" r="50" fill="#1e4d4a" opacity="0.1" />
-        <path d="M180,180 L220,180 L220,220 L180,220 Z" fill="#1e4d4a" opacity="0.2" />
+        <circle cx="200" cy="200" r="100" fill="none" stroke="#c41e2a" strokeWidth="1" strokeDasharray="4,4" opacity="0.3" />
+        <circle cx="200" cy="200" r="50" fill="#c41e2a" opacity="0.1" />
+        <path d="M180,180 L220,180 L220,220 L180,220 Z" fill="#c41e2a" opacity="0.2" />
       </svg>
     ),
   },
@@ -34,18 +34,18 @@ const steps = [
       <svg viewBox="0 0 400 400" className="w-full h-full">
         <defs>
           <linearGradient id="grad2" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#1e4d4a" stopOpacity="0.15" />
-            <stop offset="100%" stopColor="#1e4d4a" stopOpacity="0.05" />
+            <stop offset="0%" stopColor="#c41e2a" stopOpacity="0.15" />
+            <stop offset="100%" stopColor="#c41e2a" stopOpacity="0.05" />
           </linearGradient>
         </defs>
         <rect x="100" y="100" width="200" height="200" fill="url(#grad2)" rx="8" />
-        <line x1="100" y1="150" x2="300" y2="150" stroke="#1e4d4a" strokeWidth="1" opacity="0.2" />
-        <line x1="100" y1="200" x2="300" y2="200" stroke="#1e4d4a" strokeWidth="1" opacity="0.2" />
-        <line x1="100" y1="250" x2="300" y2="250" stroke="#1e4d4a" strokeWidth="1" opacity="0.2" />
-        <line x1="200" y1="100" x2="200" y2="300" stroke="#1e4d4a" strokeWidth="1" opacity="0.2" />
-        <circle cx="150" cy="175" r="8" fill="#1e4d4a" opacity="0.3" />
-        <circle cx="250" cy="225" r="8" fill="#1e4d4a" opacity="0.3" />
-        <circle cx="150" cy="275" r="8" fill="#1e4d4a" opacity="0.3" />
+        <line x1="100" y1="150" x2="300" y2="150" stroke="#c41e2a" strokeWidth="1" opacity="0.2" />
+        <line x1="100" y1="200" x2="300" y2="200" stroke="#c41e2a" strokeWidth="1" opacity="0.2" />
+        <line x1="100" y1="250" x2="300" y2="250" stroke="#c41e2a" strokeWidth="1" opacity="0.2" />
+        <line x1="200" y1="100" x2="200" y2="300" stroke="#c41e2a" strokeWidth="1" opacity="0.2" />
+        <circle cx="150" cy="175" r="8" fill="#c41e2a" opacity="0.3" />
+        <circle cx="250" cy="225" r="8" fill="#c41e2a" opacity="0.3" />
+        <circle cx="150" cy="275" r="8" fill="#c41e2a" opacity="0.3" />
       </svg>
     ),
   },
@@ -58,13 +58,13 @@ const steps = [
       <svg viewBox="0 0 400 400" className="w-full h-full">
         <defs>
           <linearGradient id="grad3" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#1e4d4a" stopOpacity="0.2" />
-            <stop offset="100%" stopColor="#1e4d4a" stopOpacity="0.05" />
+            <stop offset="0%" stopColor="#c41e2a" stopOpacity="0.2" />
+            <stop offset="100%" stopColor="#c41e2a" stopOpacity="0.05" />
           </linearGradient>
         </defs>
         <path d="M200,50 L350,200 L200,350 L50,200 Z" fill="url(#grad3)" />
-        <circle cx="200" cy="200" r="40" fill="none" stroke="#1e4d4a" strokeWidth="2" opacity="0.3" />
-        <path d="M170,200 L190,220 L230,180" stroke="#1e4d4a" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" opacity="0.4" />
+        <circle cx="200" cy="200" r="40" fill="none" stroke="#c41e2a" strokeWidth="2" opacity="0.3" />
+        <path d="M170,200 L190,220 L230,180" stroke="#c41e2a" strokeWidth="3" fill="none" strokeLinecap="round" strokeLinejoin="round" opacity="0.4" />
       </svg>
     ),
   },
@@ -77,16 +77,16 @@ const steps = [
       <svg viewBox="0 0 400 400" className="w-full h-full">
         <defs>
           <linearGradient id="grad4" x1="0%" y1="0%" x2="100%" y2="100%">
-            <stop offset="0%" stopColor="#1e4d4a" stopOpacity="0.2" />
-            <stop offset="100%" stopColor="#1e4d4a" stopOpacity="0.05" />
+            <stop offset="0%" stopColor="#c41e2a" stopOpacity="0.2" />
+            <stop offset="100%" stopColor="#c41e2a" stopOpacity="0.05" />
           </linearGradient>
         </defs>
         <circle cx="200" cy="200" r="150" fill="url(#grad4)" />
-        <path d="M100,200 Q150,100 200,200 T300,200" stroke="#1e4d4a" strokeWidth="2" fill="none" opacity="0.3" />
-        <circle cx="100" cy="200" r="8" fill="#1e4d4a" opacity="0.2" />
-        <circle cx="200" cy="200" r="8" fill="#1e4d4a" opacity="0.3" />
-        <circle cx="300" cy="200" r="8" fill="#1e4d4a" opacity="0.4" />
-        <path d="M280,180 L300,200 L280,220" stroke="#1e4d4a" strokeWidth="2" fill="none" opacity="0.4" />
+        <path d="M100,200 Q150,100 200,200 T300,200" stroke="#c41e2a" strokeWidth="2" fill="none" opacity="0.3" />
+        <circle cx="100" cy="200" r="8" fill="#c41e2a" opacity="0.2" />
+        <circle cx="200" cy="200" r="8" fill="#c41e2a" opacity="0.3" />
+        <circle cx="300" cy="200" r="8" fill="#c41e2a" opacity="0.4" />
+        <path d="M280,180 L300,200 L280,220" stroke="#c41e2a" strokeWidth="2" fill="none" opacity="0.4" />
       </svg>
     ),
   },
@@ -143,7 +143,7 @@ export default function StickyScroll() {
                     key={index}
                     className={`
                       w-2 h-2 rounded-full transition-all duration-500
-                      ${activeIndex === index ? 'bg-emerald-800 scale-125' : 'bg-gray-300'}
+                      ${activeIndex === index ? 'bg-red-700 scale-125' : 'bg-gray-300'}
                     `}
                   />
                 ))}
@@ -165,7 +165,7 @@ export default function StickyScroll() {
                   {step.visual}
                 </div>
 
-                <span className="text-emerald-800/50 text-xs tracking-[0.3em] uppercase block mb-2">
+                <span className="text-red-700/50 text-xs tracking-[0.3em] uppercase block mb-2">
                   Step {String(step.id).padStart(2, '0')}
                 </span>
 
@@ -183,8 +183,8 @@ export default function StickyScroll() {
 
                 {/* 装飾ライン */}
                 <div className="mt-6 lg:mt-8 flex items-center gap-4">
-                  <div className="w-16 h-px bg-gradient-to-r from-emerald-800/30 to-transparent" />
-                  <span className="text-emerald-800/40 text-xs">
+                  <div className="w-16 h-px bg-gradient-to-r from-red-700/30 to-transparent" />
+                  <span className="text-red-700/40 text-xs">
                     {index + 1} / {steps.length}
                   </span>
                 </div>

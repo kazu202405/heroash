@@ -10,8 +10,8 @@ function AbstractIllustration({ isVisible }) {
     >
       <defs>
         <linearGradient id="conceptGrad" x1="0%" y1="0%" x2="100%" y2="100%">
-          <stop offset="0%" stopColor="#1e4d4a" stopOpacity="0.1" />
-          <stop offset="100%" stopColor="#1e4d4a" stopOpacity="0.02" />
+          <stop offset="0%" stopColor="#c41e2a" stopOpacity="0.1" />
+          <stop offset="100%" stopColor="#c41e2a" stopOpacity="0.02" />
         </linearGradient>
       </defs>
 
@@ -24,7 +24,7 @@ function AbstractIllustration({ isVisible }) {
 
       {/* Grid lines - representing organization */}
       <g
-        stroke="#1e4d4a"
+        stroke="#c41e2a"
         strokeWidth="1"
         className={`transition-all duration-1000 delay-200 ${isVisible ? 'opacity-10' : 'opacity-0'}`}
       >
@@ -37,7 +37,7 @@ function AbstractIllustration({ isVisible }) {
 
       {/* Accent circles at intersections */}
       <g
-        fill="#1e4d4a"
+        fill="#c41e2a"
         className={`transition-all duration-700 delay-500 ${isVisible ? 'opacity-20' : 'opacity-0'}`}
       >
         <circle cx="150" cy="150" r="8" />
@@ -48,7 +48,7 @@ function AbstractIllustration({ isVisible }) {
       {/* Flowing curve - representing process */}
       <path
         d="M80,420 Q150,380 200,250 T320,80"
-        stroke="#1e4d4a"
+        stroke="#c41e2a"
         strokeWidth="2"
         fill="none"
         className={`transition-all duration-1000 delay-300 ${isVisible ? 'opacity-25' : 'opacity-0'}`}
@@ -61,7 +61,7 @@ function AbstractIllustration({ isVisible }) {
 
       {/* Corner brackets */}
       <g
-        stroke="#1e4d4a"
+        stroke="#c41e2a"
         strokeWidth="2"
         className={`transition-all duration-700 delay-700 ${isVisible ? 'opacity-30' : 'opacity-0'}`}
       >
@@ -74,17 +74,17 @@ function AbstractIllustration({ isVisible }) {
       {/* Central emphasis */}
       <circle
         cx="200" cy="250" r="40"
-        fill="none" stroke="#1e4d4a" strokeWidth="1"
+        fill="none" stroke="#c41e2a" strokeWidth="1"
         className={`transition-all duration-1000 delay-400 ${isVisible ? 'opacity-15' : 'opacity-0'}`}
       />
       <circle
         cx="200" cy="250" r="25"
-        fill="none" stroke="#1e4d4a" strokeWidth="1"
+        fill="none" stroke="#c41e2a" strokeWidth="1"
         className={`transition-all duration-1000 delay-500 ${isVisible ? 'opacity-20' : 'opacity-0'}`}
       />
       <circle
         cx="200" cy="250" r="6"
-        fill="#1e4d4a"
+        fill="#c41e2a"
         className={`transition-all duration-700 delay-600 ${isVisible ? 'opacity-40' : 'opacity-0'}`}
       />
     </svg>
@@ -156,13 +156,13 @@ export default function Concept() {
                   ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}
                 `}
               >
-                <div className="w-12 h-12 rounded-full border border-emerald-800/20 flex items-center justify-center">
-                  <span className="text-xs text-emerald-800/60 tracking-wider">01</span>
+                <div className="w-12 h-12 rounded-full border border-red-700/20 flex items-center justify-center">
+                  <span className="text-xs text-red-700/60 tracking-wider">01</span>
                 </div>
-                <span className="text-xs tracking-[0.3em] text-emerald-800/60 uppercase">
+                <span className="text-xs tracking-[0.3em] text-red-700/60 uppercase">
                   Philosophy
                 </span>
-                <div className="flex-1 h-px bg-gradient-to-r from-emerald-800/20 to-transparent" />
+                <div className="flex-1 h-px bg-gradient-to-r from-red-700/20 to-transparent" />
               </div>
 
               <h2
@@ -180,7 +180,7 @@ export default function Concept() {
               >
                 判断の前に、
                 <br />
-                <span className="text-emerald-800">整理を。</span>
+                <span className="text-red-700">整理を。</span>
               </h2>
             </div>
 
@@ -205,7 +205,7 @@ export default function Concept() {
               <div className="
                 pl-6
                 border-l-2
-                border-emerald-800/10
+                border-red-700/10
                 space-y-4
               ">
                 <p className="text-gray-600 leading-relaxed">
@@ -233,13 +233,13 @@ export default function Concept() {
                 w-16
                 h-16
                 rounded-full
-                bg-gradient-to-br from-emerald-800/10 to-emerald-800/5
+                bg-gradient-to-br from-red-700/10 to-red-700/5
                 flex
                 items-center
                 justify-center
                 flex-shrink-0
               ">
-                <svg viewBox="0 0 24 24" className="w-6 h-6 text-emerald-800/60">
+                <svg viewBox="0 0 24 24" className="w-6 h-6 text-red-700/60">
                   <path
                     fill="currentColor"
                     d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm0 18c-4.41 0-8-3.59-8-8s3.59-8 8-8 8 3.59 8 8-3.59 8-8 8zm.31-8.86c-1.77-.45-2.34-.94-2.34-1.67 0-.84.79-1.43 2.1-1.43 1.38 0 1.9.66 1.94 1.64h1.71c-.05-1.34-.87-2.57-2.49-2.97V5H10.9v1.69c-1.51.32-2.72 1.3-2.72 2.81 0 1.79 1.49 2.69 3.66 3.21 1.95.46 2.34 1.15 2.34 1.87 0 .53-.39 1.39-2.1 1.39-1.6 0-2.23-.72-2.32-1.64H8.04c.1 1.7 1.36 2.66 2.86 2.97V19h2.34v-1.67c1.52-.29 2.72-1.16 2.73-2.77-.01-2.2-1.9-2.96-3.66-3.42z"
@@ -253,7 +253,7 @@ export default function Concept() {
                 leading-relaxed
               ">
                 整理ができれば、
-                <span className="text-emerald-800 font-normal">判断は自ずと見えてきます。</span>
+                <span className="text-red-700 font-normal">判断は自ずと見えてきます。</span>
               </p>
             </div>
           </div>

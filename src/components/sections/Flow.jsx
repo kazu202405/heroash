@@ -69,10 +69,10 @@ function StepCard({ item, index, totalSteps }) {
         rounded-2xl
         border
         border-gray-100
-        hover:border-emerald-800/20
+        hover:border-red-700/20
         hover:bg-white
         hover:shadow-lg
-        hover:shadow-emerald-800/5
+        hover:shadow-red-700/5
         transition-all
         duration-500
         group
@@ -87,19 +87,19 @@ function StepCard({ item, index, totalSteps }) {
           rounded-full
           bg-white
           border-2
-          border-emerald-800/20
+          border-red-700/20
           flex
           items-center
           justify-center
-          group-hover:border-emerald-800
-          group-hover:bg-emerald-800
+          group-hover:border-red-700
+          group-hover:bg-red-700
           transition-all
           duration-500
         ">
           <span className="
             text-xs
             font-medium
-            text-emerald-800/60
+            text-red-700/60
             group-hover:text-white
             transition-colors
             duration-300
@@ -118,7 +118,7 @@ function StepCard({ item, index, totalSteps }) {
             w-px
             h-8
             bg-gradient-to-b
-            from-emerald-800/20
+            from-red-700/20
             to-transparent
           " />
         )}
@@ -128,7 +128,7 @@ function StepCard({ item, index, totalSteps }) {
           text-gray-800
           mt-3
           mb-3
-          group-hover:text-emerald-800
+          group-hover:text-red-700
           transition-colors
           duration-300
         ">
@@ -157,7 +157,7 @@ function StepCard({ item, index, totalSteps }) {
           <svg viewBox="0 0 24 24" className="w-full h-full">
             <path
               d="M20,4 L20,20 L4,20"
-              stroke="#1e4d4a"
+              stroke="#c41e2a"
               strokeWidth="1.5"
               fill="none"
               opacity="0.3"
@@ -204,14 +204,14 @@ export default function Flow() {
       >
         <path
           d="M-100,400 Q200,200 500,400 T1100,400 T1600,400"
-          stroke="#1e4d4a"
+          stroke="#c41e2a"
           strokeWidth="1"
           fill="none"
           opacity="0.05"
         />
         <path
           d="M-100,450 Q250,250 550,450 T1150,450 T1600,450"
-          stroke="#1e4d4a"
+          stroke="#c41e2a"
           strokeWidth="1"
           fill="none"
           opacity="0.03"
@@ -240,13 +240,13 @@ export default function Flow() {
           `}
         >
           <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-12 rounded-full border border-emerald-800/20 flex items-center justify-center">
-              <span className="text-xs text-emerald-800/60 tracking-wider">04</span>
+            <div className="w-12 h-12 rounded-full border border-red-700/20 flex items-center justify-center">
+              <span className="text-xs text-red-700/60 tracking-wider">04</span>
             </div>
-            <span className="text-xs tracking-[0.3em] text-emerald-800/60 uppercase">
+            <span className="text-xs tracking-[0.3em] text-red-700/60 uppercase">
               Process
             </span>
-            <div className="flex-1 h-px bg-gradient-to-r from-emerald-800/20 to-transparent" />
+            <div className="flex-1 h-px bg-gradient-to-r from-red-700/20 to-transparent" />
           </div>
 
           <h2 className="
@@ -260,7 +260,7 @@ export default function Flow() {
             mb-6
           ">
             整理から完了までの
-            <span className="text-emerald-800">流れ</span>
+            <span className="text-red-700">流れ</span>
           </h2>
 
           <p className="text-gray-600 text-lg">
@@ -285,7 +285,7 @@ export default function Flow() {
                  C200,50 200,150 350,150
                  C500,150 500,50 650,50
                  C800,50 800,150 950,150"
-              stroke="#1e4d4a"
+              stroke="#c41e2a"
               strokeWidth="2"
               fill="none"
               opacity="0.1"

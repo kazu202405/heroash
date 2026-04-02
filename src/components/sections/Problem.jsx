@@ -59,9 +59,9 @@ export default function Problem() {
         viewBox="0 0 600 800"
         preserveAspectRatio="xMaxYMid slice"
       >
-        <circle cx="600" cy="400" r="500" stroke="#1e4d4a" strokeWidth="1" fill="none" />
-        <circle cx="600" cy="400" r="400" stroke="#1e4d4a" strokeWidth="1" fill="none" />
-        <circle cx="600" cy="400" r="300" stroke="#1e4d4a" strokeWidth="1" fill="none" />
+        <circle cx="600" cy="400" r="500" stroke="#c41e2a" strokeWidth="1" fill="none" />
+        <circle cx="600" cy="400" r="400" stroke="#c41e2a" strokeWidth="1" fill="none" />
+        <circle cx="600" cy="400" r="300" stroke="#c41e2a" strokeWidth="1" fill="none" />
       </svg>
 
       <div className="relative max-w-6xl mx-auto px-6 md:px-8">
@@ -76,10 +76,10 @@ export default function Problem() {
                   ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}
                 `}
               >
-                <div className="w-12 h-12 rounded-full border border-emerald-800/20 flex items-center justify-center">
-                  <span className="text-xs text-emerald-800/60 tracking-wider">02</span>
+                <div className="w-12 h-12 rounded-full border border-red-700/20 flex items-center justify-center">
+                  <span className="text-xs text-red-700/60 tracking-wider">02</span>
                 </div>
-                <span className="text-xs tracking-[0.3em] text-emerald-800/60 uppercase">
+                <span className="text-xs tracking-[0.3em] text-red-700/60 uppercase">
                   Situation
                 </span>
               </div>
@@ -100,7 +100,7 @@ export default function Problem() {
               >
                 よくある
                 <br />
-                <span className="text-emerald-800">状況</span>
+                <span className="text-red-700">状況</span>
               </h2>
 
               <p
@@ -144,7 +144,7 @@ export default function Problem() {
                     rounded-xl
                     border
                     border-gray-100
-                    hover:border-emerald-800/20
+                    hover:border-red-700/20
                     hover:shadow-sm
                     transition-all
                     duration-500
@@ -160,7 +160,7 @@ export default function Problem() {
                     text-4xl
                     font-light
                     text-gray-100
-                    group-hover:text-emerald-800/10
+                    group-hover:text-red-700/10
                     transition-colors
                     duration-300
                   ">
@@ -178,8 +178,8 @@ export default function Problem() {
                       h-2
                       mt-2
                       rounded-full
-                      bg-emerald-800/30
-                      group-hover:bg-emerald-800
+                      bg-red-700/30
+                      group-hover:bg-red-700
                       transition-colors
                       duration-300
                       flex-shrink-0
@@ -202,7 +202,7 @@ export default function Problem() {
                 mt-12
                 pl-6
                 border-l-2
-                border-emerald-800/10
+                border-red-700/10
                 transition-all duration-1000 delay-700
                 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
               `}

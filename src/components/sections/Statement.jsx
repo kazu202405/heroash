@@ -31,21 +31,21 @@ function ParallaxBackground() {
       >
         <path
           d="M-100,300 Q400,200 800,300 T1600,250"
-          stroke="#1e4d4a"
+          stroke="#c41e2a"
           strokeWidth="1"
           fill="none"
           opacity="0.15"
         />
         <path
           d="M-100,350 Q500,250 900,350 T1600,300"
-          stroke="#1e4d4a"
+          stroke="#c41e2a"
           strokeWidth="1"
           fill="none"
           opacity="0.1"
         />
         <path
           d="M-100,400 Q600,300 1000,400 T1600,350"
-          stroke="#1e4d4a"
+          stroke="#c41e2a"
           strokeWidth="1"
           fill="none"
           opacity="0.05"
@@ -175,7 +175,7 @@ export default function Statement() {
               leading-[1.1]
               tracking-tight
             ">
-              <span className="text-emerald-400/90">
+              <span className="text-red-400/90">
                 <AnimatedText delay={400}>正解とは限らない。</AnimatedText>
               </span>
             </span>
@@ -214,7 +214,7 @@ export default function Statement() {
               <div
                 key={i}
                 className={`
-                  w-1.5 h-1.5 rounded-full bg-emerald-400/40
+                  w-1.5 h-1.5 rounded-full bg-red-400/40
                   ${i === 1 ? 'scale-125' : ''}
                 `}
               />

@@ -4,7 +4,7 @@ import { gsap } from 'gsap'
 // モーフィングするブロブ
 export function MorphingBlob({
   className = '',
-  color = '#1e4d4a',
+  color = '#c41e2a',
   size = 400,
   duration = 8,
   opacity = 0.1,
@@ -57,7 +57,7 @@ export function MorphingBlob({
 // アニメーショングラデーション背景
 export function AnimatedGradient({
   className = '',
-  colors = ['#1e4d4a', '#2a6b66', '#0d2f2d'],
+  colors = ['#c41e2a', '#2a6b66', '#0d2f2d'],
 }) {
   const gradientRef = useRef(null)
 
@@ -122,7 +122,7 @@ export function FloatingParticles({ count = 20, className = '' }) {
       {particles.map((particle) => (
         <div
           key={particle.id}
-          className="absolute rounded-full bg-emerald-800/10 animate-float"
+          className="absolute rounded-full bg-red-700/10 animate-float"
           style={{
             width: particle.size,
             height: particle.size,
@@ -140,7 +140,7 @@ export function FloatingParticles({ count = 20, className = '' }) {
 // 波打つライン
 export function WavyLine({
   className = '',
-  color = '#1e4d4a',
+  color = '#c41e2a',
   amplitude = 20,
   frequency = 0.02,
   speed = 0.5,

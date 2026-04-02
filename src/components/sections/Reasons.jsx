@@ -73,7 +73,7 @@ export default function Reasons() {
         >
           <path
             d="M0,400 Q360,300 720,350 T1440,300 L1440,400 Z"
-            fill="#1e4d4a"
+            fill="#c41e2a"
           />
         </svg>
       </div>
@@ -88,11 +88,11 @@ export default function Reasons() {
           `}
         >
           <div className="flex items-center justify-center gap-4 mb-6">
-            <div className="w-12 h-px bg-emerald-800/20" />
-            <span className="text-xs tracking-[0.3em] text-emerald-800/60 uppercase">
+            <div className="w-12 h-px bg-red-700/20" />
+            <span className="text-xs tracking-[0.3em] text-red-700/60 uppercase">
               Reasons
             </span>
-            <div className="w-12 h-px bg-emerald-800/20" />
+            <div className="w-12 h-px bg-red-700/20" />
           </div>
 
           <h2 className="
@@ -104,7 +104,7 @@ export default function Reasons() {
             leading-[1.1]
             tracking-tight
           ">
-            選ばれる<span className="text-emerald-800">理由</span>
+            選ばれる<span className="text-red-700">理由</span>
           </h2>
         </div>
 
@@ -127,7 +127,7 @@ export default function Reasons() {
                   rounded-2xl
                   border
                   border-gray-100
-                  hover:border-emerald-800/20
+                  hover:border-red-700/20
                   hover:bg-white
                   transition-colors
                   duration-500
@@ -142,7 +142,7 @@ export default function Reasons() {
                     text-6xl
                     font-light
                     text-gray-100
-                    group-hover:text-emerald-800/5
+                    group-hover:text-red-700/5
                     transition-colors
                     duration-500
                   ">
@@ -151,8 +151,8 @@ export default function Reasons() {
 
                   {/* アイコン */}
                   <div className="
-                    text-emerald-800/40
-                    group-hover:text-emerald-800/60
+                    text-red-700/40
+                    group-hover:text-red-700/60
                     transition-colors
                     duration-300
                     mb-6
@@ -165,7 +165,7 @@ export default function Reasons() {
                     text-xl
                     text-gray-800
                     mb-4
-                    group-hover:text-emerald-800
+                    group-hover:text-red-700
                     transition-colors
                     duration-300
                   ">
@@ -186,9 +186,9 @@ export default function Reasons() {
                     h-px
                     bg-gradient-to-r
                     from-transparent
-                    via-emerald-800/0
+                    via-red-700/0
                     to-transparent
-                    group-hover:via-emerald-800/20
+                    group-hover:via-red-700/20
                     transition-all
                     duration-500
                   " />

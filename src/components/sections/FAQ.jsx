@@ -45,7 +45,7 @@ function FAQItem({ question, answer, isOpen, onClick }) {
         <span className="
           text-base
           text-gray-800
-          group-hover:text-emerald-800
+          group-hover:text-red-700
           transition-colors
           duration-200
         ">

@@ -25,8 +25,8 @@ function ProcessIllustration() {
     <svg viewBox="0 0 300 400" className="w-full h-auto max-w-xs mx-auto">
       <defs>
         <linearGradient id="processGrad" x1="0%" y1="0%" x2="0%" y2="100%">
-          <stop offset="0%" stopColor="#1e4d4a" stopOpacity="0.08" />
-          <stop offset="100%" stopColor="#1e4d4a" stopOpacity="0.02" />
+          <stop offset="0%" stopColor="#c41e2a" stopOpacity="0.08" />
+          <stop offset="100%" stopColor="#c41e2a" stopOpacity="0.02" />
         </linearGradient>
       </defs>
 
@@ -47,7 +47,7 @@ function ProcessIllustration() {
         d="M150,30
            Q230,100 150,180
            Q70,260 150,340"
-        stroke="#1e4d4a"
+        stroke="#c41e2a"
         strokeWidth="2"
         fill="none"
         opacity="0.2"
@@ -61,17 +61,17 @@ function ProcessIllustration() {
             cy={y}
             r="20"
             fill="white"
-            stroke="#1e4d4a"
+            stroke="#c41e2a"
             strokeWidth="1"
             opacity="0.3"
           />
-          <circle cx="150" cy={y} r="6" fill="#1e4d4a" opacity="0.4" />
+          <circle cx="150" cy={y} r="6" fill="#c41e2a" opacity="0.4" />
           <text
             x="150"
             y={y + 4}
             textAnchor="middle"
             fontSize="10"
-            fill="#1e4d4a"
+            fill="#c41e2a"
             opacity="0.6"
           >
             {String(i + 1).padStart(2, '0')}
@@ -80,7 +80,7 @@ function ProcessIllustration() {
       ))}
 
       {/* Decorative dots */}
-      <g fill="#1e4d4a" opacity="0.1">
+      <g fill="#c41e2a" opacity="0.1">
         <circle cx="80" cy="130" r="3" />
         <circle cx="220" cy="230" r="3" />
         <circle cx="100" cy="310" r="3" />
@@ -99,8 +99,8 @@ export default function Approach() {
           background: `
             repeating-linear-gradient(
               -45deg,
-              #1e4d4a,
-              #1e4d4a 1px,
+              #c41e2a,
+              #c41e2a 1px,
               transparent 1px,
               transparent 80px
             )
@@ -117,10 +117,10 @@ export default function Approach() {
             {/* ヘッダー */}
             <div className="mb-16">
               <div className="flex items-center gap-4 mb-6">
-                <div className="w-12 h-12 rounded-full border border-emerald-800/20 flex items-center justify-center">
-                  <span className="text-xs text-emerald-800/60 tracking-wider">02</span>
+                <div className="w-12 h-12 rounded-full border border-red-700/20 flex items-center justify-center">
+                  <span className="text-xs text-red-700/60 tracking-wider">02</span>
                 </div>
-                <div className="flex-1 h-px bg-gradient-to-r from-emerald-800/10 to-transparent" />
+                <div className="flex-1 h-px bg-gradient-to-r from-red-700/10 to-transparent" />
               </div>
 
               <h2 className="
@@ -133,7 +133,7 @@ export default function Approach() {
                 mb-6
               ">
                 まず、
-                <span className="text-emerald-800">状況を整理</span>
+                <span className="text-red-700">状況を整理</span>
                 します。
               </h2>
 
@@ -154,7 +154,7 @@ export default function Approach() {
                     py-4
                     border-l-2
                     border-gray-200
-                    hover:border-emerald-800/40
+                    hover:border-red-700/40
                     transition-colors
                     duration-300
                   "
@@ -170,13 +170,13 @@ export default function Approach() {
                     bg-white
                     border
                     border-gray-200
-                    group-hover:border-emerald-800/40
+                    group-hover:border-red-700/40
                     flex
                     items-center
                     justify-center
                     text-[10px]
                     text-gray-400
-                    group-hover:text-emerald-800
+                    group-hover:text-red-700
                     transition-colors
                     duration-300
                   ">
@@ -187,7 +187,7 @@ export default function Approach() {
                     text-lg
                     text-gray-800
                     mb-2
-                    group-hover:text-emerald-800
+                    group-hover:text-red-700
                     transition-colors
                     duration-300
                   ">

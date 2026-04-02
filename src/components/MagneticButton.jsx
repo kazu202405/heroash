@@ -60,7 +60,7 @@ export default function MagneticButton({
         className={`
           absolute
           inset-0
-          bg-emerald-800
+          bg-red-700
           transform
           transition-transform
           duration-500
@@ -94,8 +94,8 @@ export function MagneticCTA({ children, href = '#contact', className = '' }) {
         px-8
         py-4
         border-2
-        border-emerald-800
-        text-emerald-800
+        border-red-700
+        text-red-700
         rounded-full
         text-sm
         tracking-wider

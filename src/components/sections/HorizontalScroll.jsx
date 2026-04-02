@@ -10,25 +10,25 @@ const features = [
     number: '01',
     title: '状況の可視化',
     description: '複雑に絡み合った相続不動産の現状を、わかりやすく整理・可視化します。',
-    accent: 'from-emerald-800/10 to-emerald-600/5',
+    accent: 'from-red-700/10 to-red-600/5',
   },
   {
     number: '02',
     title: '選択肢の明確化',
     description: '売却、賃貸、保有、それぞれのメリット・デメリットを明確にします。',
-    accent: 'from-emerald-700/10 to-emerald-500/5',
+    accent: 'from-red-700/10 to-red-500/5',
   },
   {
     number: '03',
     title: '家族間の調整',
     description: '相続人間の意見調整をサポートし、円満な解決を目指します。',
-    accent: 'from-emerald-600/10 to-emerald-400/5',
+    accent: 'from-red-600/10 to-red-400/5',
   },
   {
     number: '04',
     title: '専門家連携',
     description: '税理士、司法書士など、必要な専門家との連携をコーディネートします。',
-    accent: 'from-teal-700/10 to-teal-500/5',
+    accent: 'from-red-700/10 to-red-500/5',
   },
 ]
 
@@ -52,14 +52,14 @@ function MobileLayout() {
     <div ref={sectionRef} className="py-16 md:py-24 px-6 md:px-8">
       {/* ヘッダー */}
       <div className="mb-12">
-        <span className="text-emerald-400/60 text-xs tracking-[0.3em] uppercase mb-4 block">
+        <span className="text-red-400/60 text-xs tracking-[0.3em] uppercase mb-4 block">
           Services
         </span>
         <h2 className="text-3xl md:text-4xl font-extralight text-white leading-tight mb-4">
           私たちが
-          <span className="text-emerald-400">できること</span>
+          <span className="text-red-400">できること</span>
         </h2>
-        <div className="w-12 h-px bg-emerald-400/30" />
+        <div className="w-12 h-px bg-red-400/30" />
       </div>
 
       {/* カードグリッド */}
@@ -84,7 +84,7 @@ function MobileLayout() {
                 {feature.number}
               </span>
               <div className="relative">
-                <span className="text-emerald-400/80 text-[10px] tracking-[0.3em] uppercase mb-2 block">
+                <span className="text-red-400/80 text-[10px] tracking-[0.3em] uppercase mb-2 block">
                   Feature {feature.number}
                 </span>
                 <h3 className="text-xl font-light text-white mb-3">
@@ -102,9 +102,9 @@ function MobileLayout() {
       {/* CTA */}
       <div className="mt-12 text-center">
         <h3 className="text-2xl font-extralight text-white mb-6">
-          まずは、<span className="text-emerald-400">お話を</span>
+          まずは、<span className="text-red-400">お話を</span>
         </h3>
-        <button className="px-6 py-3 border border-emerald-400/50 text-emerald-400 rounded-full text-xs tracking-wider uppercase hover:bg-emerald-400 hover:text-black transition-all duration-500">
+        <button className="px-6 py-3 border border-red-400/50 text-red-400 rounded-full text-xs tracking-wider uppercase hover:bg-red-400 hover:text-black transition-all duration-500">
           Contact
         </button>
       </div>
@@ -123,16 +123,16 @@ function DesktopLayout({ sectionRef, containerRef }) {
       {/* イントロパネル */}
       <div className="flex-shrink-0 w-[40vw] h-screen flex items-center justify-center px-8">
         <div className="max-w-md">
-          <span className="text-emerald-400/60 text-xs tracking-[0.3em] uppercase mb-4 block">
+          <span className="text-red-400/60 text-xs tracking-[0.3em] uppercase mb-4 block">
             Services
           </span>
           <h2 className="text-5xl font-extralight text-white leading-tight mb-4">
             私たちが
-            <span className="text-emerald-400">できること</span>
+            <span className="text-red-400">できること</span>
           </h2>
           <div className="flex items-center gap-3">
-            <div className="w-8 h-px bg-emerald-400/50" />
-            <svg className="w-5 h-5 text-emerald-400/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <div className="w-8 h-px bg-red-400/50" />
+            <svg className="w-5 h-5 text-red-400/60" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={1} d="M17 8l4 4m0 0l-4 4m4-4H3" />
             </svg>
           </div>
@@ -161,7 +161,7 @@ function DesktopLayout({ sectionRef, containerRef }) {
                 {feature.number}
               </span>
               <div className="relative">
-                <span className="text-emerald-400/80 text-[10px] tracking-[0.3em] uppercase mb-3 block">
+                <span className="text-red-400/80 text-[10px] tracking-[0.3em] uppercase mb-3 block">
                   Feature {feature.number}
                 </span>
                 <h3 className="text-3xl font-light text-white mb-4">
@@ -181,9 +181,9 @@ function DesktopLayout({ sectionRef, containerRef }) {
         <div className="text-center">
           <h3 className="text-4xl font-extralight text-white mb-6">
             まずは、
-            <span className="text-emerald-400">お話を</span>
+            <span className="text-red-400">お話を</span>
           </h3>
-          <button className="px-6 py-3 border border-emerald-400/50 text-emerald-400 rounded-full text-xs tracking-wider uppercase hover:bg-emerald-400 hover:text-black transition-all duration-500">
+          <button className="px-6 py-3 border border-red-400/50 text-red-400 rounded-full text-xs tracking-wider uppercase hover:bg-red-400 hover:text-black transition-all duration-500">
             Contact
           </button>
         </div>

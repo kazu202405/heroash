@@ -22,35 +22,22 @@ export default function Footer() {
           <div>
             <div className="flex items-center gap-3 mb-4">
               <div className="relative w-6 h-6">
-                <div className="
-                  absolute
-                  inset-0
-                  border
-                  border-gray-800
-                  opacity-20
-                  transform
-                  rotate-45
-                " />
-                <div className="
-                  absolute
-                  inset-1
-                  bg-emerald-800
-                  opacity-80
-                " />
+                <div className="absolute inset-0 rounded-full bg-red-600" />
               </div>
               <span className="
                 text-sm
                 tracking-wider
                 text-gray-800
+                font-bold
               ">
-                相続不動産相談室
+                HERO assch
               </span>
             </div>
             <p className="
               text-xs
               text-gray-500
             ">
-              株式会社○○○○
+              HERO assch 株式会社（ヒーローアッシュ）
             </p>
           </div>
 
@@ -59,7 +46,7 @@ export default function Footer() {
             text-xs
             text-gray-400
           ">
-            <p>&copy; {currentYear} All rights reserved.</p>
+            <p>&copy; {currentYear} HERO assch. All rights reserved.</p>
           </div>
         </div>
       </div>

@@ -1,12 +1,13 @@
 import { useEffect, useState, useRef } from 'react'
 
 const companyInfo = [
-  { label: '社名', value: '株式会社○○○○' },
-  { label: '所在地', value: '東京都○○区○○ 0-0-0' },
-  { label: '代表', value: '○○ ○○' },
-  { label: '設立', value: '20XX年X月' },
+  { label: '社名', value: 'HERO assch 株式会社（ヒーローアッシュ）' },
+  { label: '代表', value: '内山 貴博（宅地建物取引士・相続診断士）' },
+  { label: '本社', value: '〒542-0076 大阪府大阪市中央区難波 2-3-11 ナンバ八千代ビル6階' },
+  { label: '梅田オフィス', value: '〒530-0001 大阪府大阪市北区梅田 1-3-1 大阪駅前第1ビル8階5号 billage OSAKA 814号室' },
+  { label: '電話', value: '090-1429-3396' },
+  { label: 'メール', value: 'hero@heroassch.com' },
   { label: '事業内容', value: '不動産売買仲介、相続不動産コンサルティング' },
-  { label: '免許番号', value: '東京都知事（X）第XXXXX号' },
 ]
 
 export default function Company() {
@@ -47,10 +48,10 @@ export default function Company() {
                 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'}
               `}
             >
-              <div className="w-12 h-12 rounded-full border border-emerald-800/20 flex items-center justify-center">
-                <span className="text-xs text-emerald-800/60 tracking-wider">06</span>
+              <div className="w-12 h-12 rounded-full border border-red-700/20 flex items-center justify-center">
+                <span className="text-xs text-red-700/60 tracking-wider">06</span>
               </div>
-              <span className="text-xs tracking-[0.3em] text-emerald-800/60 uppercase">
+              <span className="text-xs tracking-[0.3em] text-red-700/60 uppercase">
                 Company
               </span>
             </div>
@@ -67,7 +68,7 @@ export default function Company() {
                 ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
               `}
             >
-              会社<span className="text-emerald-800">概要</span>
+              会社<span className="text-red-700">概要</span>
             </h2>
 
             <dl className="space-y-4">
@@ -93,7 +94,7 @@ export default function Company() {
                     text-gray-500
                     uppercase
                     tracking-wider
-                    sm:w-28
+                    sm:w-32
                     flex-shrink-0
                     mb-1
                     sm:mb-0
@@ -109,19 +110,9 @@ export default function Company() {
                 </div>
               ))}
             </dl>
-
-            <p
-              className={`
-                mt-10 text-xs text-gray-400
-                transition-all duration-1000 delay-700
-                ${isVisible ? 'opacity-100' : 'opacity-0'}
-              `}
-            >
-              ※ 情報は変更になる場合があります
-            </p>
           </div>
 
-          {/* 画像 */}
+          {/* 赤い球体のビジュアル */}
           <div
             className={`
               lg:col-span-5
@@ -129,27 +120,21 @@ export default function Company() {
               ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}
             `}
           >
-            <div className="relative">
-              {/* メイン画像 */}
-              <div className="rounded-2xl overflow-hidden">
-                <img
-                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?w=600&q=80"
-                  alt="オフィス"
-                  className="w-full aspect-[4/3] object-cover grayscale hover:grayscale-0 transition-all duration-700"
-                />
-              </div>
-
-              {/* 装飾的なサブ画像 */}
-              <div className="absolute -bottom-6 -left-6 w-32 h-32 rounded-xl overflow-hidden shadow-xl hidden md:block">
-                <img
-                  src="https://images.unsplash.com/photo-1554469384-e58fac16e23a?w=200&q=80"
-                  alt=""
-                  className="w-full h-full object-cover"
-                />
-              </div>
+            <div className="relative flex items-center justify-center py-8">
+              <svg viewBox="0 0 400 400" className="w-full max-w-sm">
+                <defs>
+                  <radialGradient id="companySphere" cx="35%" cy="35%" r="65%">
+                    <stop offset="0%" stopColor="#e63946" />
+                    <stop offset="50%" stopColor="#c41e2a" />
+                    <stop offset="100%" stopColor="#8b1520" />
+                  </radialGradient>
+                </defs>
+                <circle cx="200" cy="200" r="160" fill="url(#companySphere)" />
+                <ellipse cx="160" cy="150" rx="60" ry="45" fill="white" opacity="0.08" />
+              </svg>
 
               {/* 装飾的な要素 */}
-              <div className="absolute -top-4 -right-4 w-24 h-24 border border-emerald-800/10 rounded-xl hidden md:block" />
+              <div className="absolute -top-4 -right-4 w-24 h-24 border border-red-700/10 rounded-xl hidden md:block" />
             </div>
           </div>
         </div>

@@ -10,31 +10,18 @@ const navLinks = [
 function Logo() {
   return (
     <a href="#" className="flex items-center gap-3 group">
+      {/* 赤い丸のロゴマーク */}
       <div className="relative w-8 h-8">
-        <div className="
-          absolute
-          inset-0
-          border
-          border-gray-800
-          opacity-20
-          transform
-          rotate-45
-        " />
-        <div className="
-          absolute
-          inset-1
-          bg-emerald-800
-          opacity-80
-        " />
+        <div className="absolute inset-0 rounded-full bg-red-600" />
       </div>
-      <span className="
-        text-sm
-        tracking-wider
-        text-gray-800
-        font-medium
-      ">
-        相続不動産相談室
-      </span>
+      <div className="flex flex-col leading-none">
+        <span className="text-sm tracking-wider text-gray-800 font-bold">
+          HERO assch
+        </span>
+        <span className="text-[9px] text-gray-400 tracking-wider">
+          ヒーローアッシュ
+        </span>
+      </div>
     </a>
   )
 }
@@ -79,7 +66,7 @@ export default function Header() {
                   className="
                     text-sm
                     text-gray-600
-                    hover:text-emerald-800
+                    hover:text-red-700
                     transition-colors
                     duration-200
                   "
@@ -140,7 +127,7 @@ export default function Header() {
                     block
                     text-sm
                     text-gray-600
-                    hover:text-emerald-800
+                    hover:text-red-700
                     transition-colors
                     duration-200
                     py-2

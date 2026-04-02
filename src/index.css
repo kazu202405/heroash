@@ -6,7 +6,7 @@
   --color-surface: #ffffff;
   --color-text-primary: #111111;
   --color-text-secondary: #666666;
-  --color-accent: #1e4d4a;
+  --color-accent: #c41e2a;
 }
 
 /* ベーススタイル */
@@ -50,7 +50,7 @@ h4, h5, h6 {
 
 /* セレクション */
 ::selection {
-  background-color: rgba(30, 77, 74, 0.15);
+  background-color: rgba(196, 30, 42, 0.15);
   color: #111111;
 }
 
@@ -200,7 +200,7 @@ h4, h5, h6 {
 
 /* グラデーションテキスト */
 .text-gradient {
-  background: linear-gradient(135deg, #1e4d4a 0%, #2a6b66 100%);
+  background: linear-gradient(135deg, #c41e2a 0%, #e63946 100%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -329,10 +329,10 @@ h4, h5, h6 {
 /* ボーダーグロー */
 @keyframes border-glow {
   0%, 100% {
-    box-shadow: 0 0 5px rgba(30, 77, 74, 0.2);
+    box-shadow: 0 0 5px rgba(196, 30, 42, 0.2);
   }
   50% {
-    box-shadow: 0 0 20px rgba(30, 77, 74, 0.4);
+    box-shadow: 0 0 20px rgba(196, 30, 42, 0.4);
   }
 }
 

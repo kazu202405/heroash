@@ -48,7 +48,7 @@ export default function CustomCursor() {
         className={`
           fixed pointer-events-none z-[9999]
           w-3 h-3 rounded-full
-          bg-emerald-800
+          bg-red-600
           transition-transform duration-75
           ${isVisible ? 'opacity-100' : 'opacity-0'}
           ${isClicking ? 'scale-75' : 'scale-100'}

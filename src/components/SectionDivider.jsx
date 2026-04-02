@@ -97,17 +97,17 @@ export function CornerAccent({ position = 'top-left', size = 'md' }) {
     >
       <path
         d="M0,0 L0,100 M0,0 L100,0"
-        stroke="#1e4d4a"
+        stroke="#c41e2a"
         strokeWidth="1"
         fill="none"
       />
       <path
         d="M0,30 Q30,30 30,0"
-        stroke="#1e4d4a"
+        stroke="#c41e2a"
         strokeWidth="1"
         fill="none"
       />
-      <circle cx="0" cy="0" r="5" fill="#1e4d4a" />
+      <circle cx="0" cy="0" r="5" fill="#c41e2a" />
     </svg>
   )
 }
@@ -125,7 +125,7 @@ export function FloatingShapes() {
         h-80
         rounded-full
         border
-        border-emerald-800/5
+        border-red-700/5
       " />
 
       {/* Circle 2 */}
@@ -137,13 +137,13 @@ export function FloatingShapes() {
         h-96
         rounded-full
         border
-        border-emerald-800/5
+        border-red-700/5
       " />
 
       {/* Diagonal lines */}
       <svg className="absolute top-0 right-0 w-1/3 h-full opacity-[0.03]">
-        <line x1="100%" y1="0" x2="0" y2="100%" stroke="#1e4d4a" strokeWidth="1" />
-        <line x1="100%" y1="20%" x2="20%" y2="100%" stroke="#1e4d4a" strokeWidth="1" />
+        <line x1="100%" y1="0" x2="0" y2="100%" stroke="#c41e2a" strokeWidth="1" />
+        <line x1="100%" y1="20%" x2="20%" y2="100%" stroke="#c41e2a" strokeWidth="1" />
       </svg>
     </div>
   )
