@@ -1,327 +1,63 @@
-import { useEffect, useState, useRef } from 'react'
-
 const steps = [
   {
-    step: '01',
-    title: 'ご相談',
-    description: '現在の状況や気になっていることをお聞かせください。費用はかかりません。',
+    title: '無料相談',
+    description: 'まずはお電話またはメールでご相談ください。',
   },
   {
-    step: '02',
-    title: '情報の整理',
-    description: '登記情報、相続人、物件の状態など、必要な情報を一緒に整理します。',
+    title: '状況の確認',
+    description: '不動産の場所、名義、相続状況、ご家族の状況などをお聞きします。',
   },
   {
-    step: '03',
-    title: '選択肢の提示',
-    description: '売却、賃貸、保有など、状況に応じた選択肢とそれぞれの概要をお伝えします。',
+    title: '調査',
+    description: '必要に応じて、不動産や権利関係などを確認します。',
   },
   {
-    step: '04',
-    title: '方針の決定',
-    description: 'ご家族で話し合い、納得のいく方針を決めていただきます。急かすことはありません。',
+    title: 'ご提案',
+    description: '売却、買取、保有、整理、専門家連携など、状況に合った方法をご提案します。',
   },
   {
-    step: '05',
-    title: '手続きの実行',
-    description: '決定した方針に沿って、必要な手続きを専門家と連携しながら進めます。',
+    title: '解決までサポート',
+    description: '必要な手続きや専門家との連携を行いながら、解決まで進めます。',
   },
 ]
 
-// 個別ステップカード（アニメーション付き）
-function StepCard({ item, index, totalSteps }) {
-  const [isVisible, setIsVisible] = useState(false)
-  const cardRef = useRef(null)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-        }
-      },
-      { threshold: 0.3 }
-    )
-
-    if (cardRef.current) {
-      observer.observe(cardRef.current)
-    }
-
-    return () => observer.disconnect()
-  }, [])
-
-  return (
-    <div
-      ref={cardRef}
-      className={`
-        relative
-        ${index % 2 === 0 ? 'lg:mt-0' : 'lg:mt-24'}
-        transition-all duration-700
-        ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-12'}
-      `}
-      style={{ transitionDelay: `${index * 150}ms` }}
-    >
-      {/* カード */}
-      <div className="
-        relative
-        p-6
-        bg-gray-50
-        rounded-2xl
-        border
-        border-gray-100
-        hover:border-red-700/20
-        hover:bg-white
-        hover:shadow-lg
-        hover:shadow-red-700/5
-        transition-all
-        duration-500
-        group
-      ">
-        {/* ステップ番号 */}
-        <div className="
-          absolute
-          -top-4
-          left-6
-          w-10
-          h-10
-          rounded-full
-          bg-white
-          border-2
-          border-red-700/20
-          flex
-          items-center
-          justify-center
-          group-hover:border-red-700
-          group-hover:bg-red-700
-          transition-all
-          duration-500
-        ">
-          <span className="
-            text-xs
-            font-medium
-            text-red-700/60
-            group-hover:text-white
-            transition-colors
-            duration-300
-          ">
-            {item.step}
-          </span>
-        </div>
-
-        {/* コネクター（モバイル用） */}
-        {index < totalSteps - 1 && (
-          <div className="
-            lg:hidden
-            absolute
-            -bottom-8
-            left-1/2
-            w-px
-            h-8
-            bg-gradient-to-b
-            from-red-700/20
-            to-transparent
-          " />
-        )}
-
-        <h3 className="
-          text-xl
-          text-gray-800
-          mt-3
-          mb-3
-          group-hover:text-red-700
-          transition-colors
-          duration-300
-        ">
-          {item.title}
-        </h3>
-
-        <p className="text-sm text-gray-600 leading-relaxed">
-          {item.description}
-        </p>
-
-        {/* 装飾的なコーナー */}
-        <div className="
-          absolute
-          bottom-3
-          right-3
-          w-8
-          h-8
-          opacity-0
-          group-hover:opacity-100
-          transition-all
-          duration-500
-          transform
-          group-hover:translate-x-0
-          translate-x-2
-        ">
-          <svg viewBox="0 0 24 24" className="w-full h-full">
-            <path
-              d="M20,4 L20,20 L4,20"
-              stroke="#c41e2a"
-              strokeWidth="1.5"
-              fill="none"
-              opacity="0.3"
-            />
-          </svg>
-        </div>
-      </div>
-    </div>
-  )
-}
-
 export default function Flow() {
-  const [isVisible, setIsVisible] = useState(false)
-  const sectionRef = useRef(null)
-
-  useEffect(() => {
-    const observer = new IntersectionObserver(
-      ([entry]) => {
-        if (entry.isIntersecting) {
-          setIsVisible(true)
-        }
-      },
-      { threshold: 0.1 }
-    )
-
-    if (sectionRef.current) {
-      observer.observe(sectionRef.current)
-    }
-
-    return () => observer.disconnect()
-  }, [])
-
   return (
-    <section
-      ref={sectionRef}
-      id="flow"
-      className="relative py-24 md:py-32 bg-white overflow-hidden"
-    >
-      {/* 背景の曲線装飾 */}
-      <svg
-        className="absolute inset-0 w-full h-full"
-        viewBox="0 0 1440 800"
-        preserveAspectRatio="xMidYMid slice"
-      >
-        <path
-          d="M-100,400 Q200,200 500,400 T1100,400 T1600,400"
-          stroke="#c41e2a"
-          strokeWidth="1"
-          fill="none"
-          opacity="0.05"
-        />
-        <path
-          d="M-100,450 Q250,250 550,450 T1150,450 T1600,450"
-          stroke="#c41e2a"
-          strokeWidth="1"
-          fill="none"
-          opacity="0.03"
-        />
-      </svg>
+    <section id="flow" className="bg-white py-16 md:py-24 border-t border-gray-100">
+      <div className="max-w-3xl mx-auto px-6 md:px-8">
+        <p className="text-sm tracking-[0.2em] text-red-700/70 text-center mb-4">
+          ご相談の流れ
+        </p>
+        <h2 className="text-2xl md:text-[2rem] font-semibold text-gray-900 leading-[1.6] mb-4 text-center">
+          解決までの流れ
+        </h2>
+        <div className="w-12 h-0.5 bg-red-700/60 mx-auto mb-14" />
 
-      {/* 大きな装飾的テキスト */}
-      <div
-        className={`
-          absolute right-0 top-1/3 text-[15rem] font-extralight text-gray-100/30 leading-none select-none
-          hidden xl:block writing-vertical
-          transition-all duration-1000
-          ${isVisible ? 'opacity-100 translate-x-0' : 'opacity-0 translate-x-16'}
-        `}
-      >
-        FLOW
-      </div>
+        <ol className="space-y-3">
+          {steps.map((step, i) => (
+            <li key={i} className="flex items-start gap-5">
+              {/* 番号 */}
+              <div className="flex flex-col items-center flex-shrink-0">
+                <span className="w-12 h-12 rounded-full bg-red-700 text-white flex items-center justify-center text-lg font-semibold">
+                  {i + 1}
+                </span>
+                {i < steps.length - 1 && (
+                  <span className="w-px flex-1 min-h-8 bg-red-700/20 my-1" />
+                )}
+              </div>
+              {/* 中身 */}
+              <div className="pb-8 pt-1">
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{step.title}</h3>
+                <p className="text-gray-700 leading-[1.9]">{step.description}</p>
+              </div>
+            </li>
+          ))}
+        </ol>
 
-      <div className="relative max-w-6xl mx-auto px-6 md:px-8">
-        {/* ヘッダー */}
-        <div
-          className={`
-            max-w-2xl mb-20
-            transition-all duration-1000
-            ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
-          `}
-        >
-          <div className="flex items-center gap-4 mb-6">
-            <div className="w-12 h-12 rounded-full border border-red-700/20 flex items-center justify-center">
-              <span className="text-xs text-red-700/60 tracking-wider">04</span>
-            </div>
-            <span className="text-xs tracking-[0.3em] text-red-700/60 uppercase">
-              Process
-            </span>
-            <div className="flex-1 h-px bg-gradient-to-r from-red-700/20 to-transparent" />
-          </div>
-
-          <h2 className="
-            text-3xl
-            md:text-4xl
-            lg:text-[3.5rem]
-            font-extralight
-            text-gray-800
-            leading-[1.1]
-            tracking-tight
-            mb-6
-          ">
-            整理から完了までの
-            <span className="text-red-700">流れ</span>
-          </h2>
-
-          <p className="text-gray-600 text-lg">
-            一般的な進め方をご紹介します。状況によって順序や内容は変わります。
-          </p>
-        </div>
-
-        {/* タイムライン */}
-        <div className="relative">
-          {/* 曲線のパス（デスクトップ） */}
-          <svg
-            className={`
-              hidden lg:block absolute top-0 left-0 w-full h-full
-              transition-opacity duration-1000 delay-500
-              ${isVisible ? 'opacity-100' : 'opacity-0'}
-            `}
-            viewBox="0 0 1000 600"
-            preserveAspectRatio="none"
-          >
-            <path
-              d="M50,50
-                 C200,50 200,150 350,150
-                 C500,150 500,50 650,50
-                 C800,50 800,150 950,150"
-              stroke="#c41e2a"
-              strokeWidth="2"
-              fill="none"
-              opacity="0.1"
-              strokeDasharray="8,8"
-              style={{
-                strokeDashoffset: isVisible ? 0 : 1000,
-                transition: 'stroke-dashoffset 2s ease-out',
-              }}
-            />
-          </svg>
-
-          {/* ステップカード */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-4">
-            {steps.map((item, index) => (
-              <StepCard
-                key={index}
-                item={item}
-                index={index}
-                totalSteps={steps.length}
-              />
-            ))}
-          </div>
-        </div>
-
-        {/* 補足テキスト */}
-        <div
-          className={`
-            mt-16 text-center
-            transition-all duration-1000 delay-700
-            ${isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'}
-          `}
-        >
-          <p className="text-sm text-gray-500">
-            ※ 各ステップにかかる期間は状況により異なります。
-            <br className="md:hidden" />
-            無理のないペースで進めていきます。
+        <div className="mt-6 bg-[#faf9f7] border border-gray-200 rounded-xl px-6 py-5">
+          <p className="text-gray-600 leading-[1.9]">
+            ※ ご相談は無料です。調査や手続きなどで費用が発生する場合は、
+            事前にご説明します。
           </p>
         </div>
       </div>
