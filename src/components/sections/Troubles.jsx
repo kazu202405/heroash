@@ -1,3 +1,5 @@
+import SectionHead from '../SectionHead'
+
 const troubles = [
   '相続した空き家',
   '遠方にある実家',
@@ -10,33 +12,24 @@ const troubles = [
 export default function Troubles() {
   return (
     <section id="troubles" className="bg-white py-16 md:py-24 border-t border-gray-100">
-      <div className="max-w-4xl mx-auto px-6 md:px-8">
-        <p className="text-sm tracking-[0.2em] text-red-700/70 text-center mb-4">
-          相続にともなう不動産
-        </p>
-        <h2 className="text-2xl md:text-[2rem] font-semibold text-gray-900 leading-[1.6] mb-4 text-center">
-          このような不動産で
-          <br className="md:hidden" />
-          お困りではありませんか？
-        </h2>
-        <div className="w-12 h-0.5 bg-red-700/60 mx-auto mb-12" />
+      <div className="max-w-5xl mx-auto px-6 md:px-8">
+        <SectionHead
+          number="01"
+          eyebrow="相続にともなう不動産"
+          title={<>このような不動産で<br className="md:hidden" />お困りではありませんか？</>}
+        />
 
-        <ul className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <ul className="grid grid-cols-1 md:grid-cols-2 gap-x-12 border-t border-gray-200">
           {troubles.map((text, i) => (
-            <li
-              key={i}
-              className="flex items-start gap-4 bg-[#faf9f7] rounded-xl px-6 py-5 border border-gray-100"
-            >
-              <span className="mt-2 w-2.5 h-2.5 rounded-full bg-red-700 flex-shrink-0" />
+            <li key={i} className="flex items-start gap-4 py-5 border-b border-gray-200">
+              <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-red-700 flex-shrink-0" />
               <span className="text-lg text-gray-800 leading-relaxed">{text}</span>
             </li>
           ))}
         </ul>
 
-        <p className="text-center text-gray-600 text-lg mt-12 leading-[2]">
-          ひとつでも当てはまれば、
-          <br className="md:hidden" />
-          まずは一度お聞かせください。
+        <p className="text-gray-600 text-lg mt-10 leading-[2]">
+          ひとつでも当てはまれば、まずは一度お聞かせください。
         </p>
       </div>
     </section>
