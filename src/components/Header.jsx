@@ -7,6 +7,14 @@ const navLinks = [
   { href: '#company', label: '会社概要' },
 ]
 
+function PhoneIcon({ className = 'w-4 h-4' }) {
+  return (
+    <svg viewBox="0 0 24 24" fill="currentColor" className={className} aria-hidden="true">
+      <path d="M6.62 10.79a15.05 15.05 0 006.59 6.59l2.2-2.2a1 1 0 011.01-.24c1.12.37 2.33.57 3.58.57a1 1 0 011 1V20a1 1 0 01-1 1C10.4 21 3 13.6 3 4.5a1 1 0 011-1H7.5a1 1 0 011 1c0 1.25.2 2.46.57 3.58a1 1 0 01-.24 1.01l-2.21 2.2z" />
+    </svg>
+  )
+}
+
 function Logo() {
   return (
     <a href="#top" className="flex items-center gap-3">
@@ -41,9 +49,10 @@ export default function Header() {
             </ul>
             <a
               href="tel:09014293396"
-              className="bg-red-700 text-white text-[15px] font-medium px-5 py-2.5 rounded-full hover:bg-red-800 transition-colors"
+              className="flex items-center gap-2 bg-red-700 text-white text-[15px] font-medium px-5 py-2.5 rounded-full hover:bg-red-800 transition-colors"
             >
-              📞 090-1429-3396
+              <PhoneIcon />
+              090-1429-3396
             </a>
           </div>
 
@@ -51,9 +60,10 @@ export default function Header() {
           <div className="flex md:hidden items-center gap-3">
             <a
               href="tel:09014293396"
-              className="bg-red-700 text-white text-sm font-medium px-4 py-2 rounded-full"
+              className="flex items-center gap-1.5 bg-red-700 text-white text-sm font-medium px-4 py-2 rounded-full"
             >
-              📞 お電話
+              <PhoneIcon className="w-3.5 h-3.5" />
+              お電話
             </a>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

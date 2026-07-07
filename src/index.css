@@ -22,29 +22,33 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* 見出し ── 明朝。細すぎると年配に読みにくいので中太で */
-h1, h2, h3 {
-  font-family: 'Noto Serif JP', 'Yu Mincho', serif;
-  font-weight: 600;
-  letter-spacing: 0.01em;
-  line-height: 1.5;
-  color: #1a1a1a;
-}
+/* 見出し・リンクの既定は @layer base に入れる
+   （レイヤー外だと Tailwind の text-* ユーティリティを打ち消してしまうため） */
+@layer base {
+  /* 見出し ── 明朝。細すぎると年配に読みにくいので中太で */
+  h1, h2, h3 {
+    font-family: 'Noto Serif JP', 'Yu Mincho', serif;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    line-height: 1.5;
+    color: #1a1a1a;
+  }
 
-h4, h5, h6 {
-  font-family: 'Noto Sans JP', sans-serif;
-  font-weight: 500;
-  color: #1a1a1a;
+  h4, h5, h6 {
+    font-family: 'Noto Sans JP', sans-serif;
+    font-weight: 500;
+    color: #1a1a1a;
+  }
+
+  /* リンクは指で押しやすく（色は各所の text-* ユーティリティに委ねる） */
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
 }
 
 /* テキスト選択 */
 ::selection {
   background-color: rgba(196, 30, 42, 0.15);
   color: #1a1a1a;
-}
-
-/* リンクは指で押しやすく */
-a {
-  color: inherit;
-  text-decoration: none;
 }

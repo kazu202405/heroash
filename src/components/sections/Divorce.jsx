@@ -9,7 +9,7 @@ const troubles = [
 
 export default function Divorce() {
   return (
-    <section id="divorce" className="bg-[#faf9f7] py-16 md:py-24">
+    <section id="divorce" className="bg-[#faf9f7] py-16 md:py-24 border-t border-gray-100">
       <div className="max-w-4xl mx-auto px-6 md:px-8">
         <p className="text-sm tracking-[0.2em] text-red-700/70 text-center mb-4">
           離婚にともなう不動産

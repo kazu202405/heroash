@@ -7,7 +7,7 @@ const questions = [
 
 export default function WhatWeDo() {
   return (
-    <section id="what-we-do" className="bg-[#faf9f7] py-16 md:py-24">
+    <section id="what-we-do" className="bg-white py-16 md:py-24 border-t border-gray-100">
       <div className="max-w-4xl mx-auto px-6 md:px-8">
         <p className="text-sm tracking-[0.2em] text-red-700/70 text-center mb-4">
           私たちができること
@@ -25,7 +25,7 @@ export default function WhatWeDo() {
           解決方法をご提案します。
         </p>
 
-        <div className="bg-white rounded-2xl border border-gray-200 px-7 py-8 md:px-10 md:py-10">
+        <div className="bg-[#faf9f7] rounded-2xl border border-gray-200 px-7 py-8 md:px-10 md:py-10">
           <p className="text-gray-600 mb-6 text-center">こんなお悩みを、まずはお聞かせください。</p>
           <ul className="space-y-4 max-w-xl mx-auto">
             {questions.map((q, i) => (

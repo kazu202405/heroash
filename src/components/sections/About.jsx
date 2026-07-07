@@ -8,7 +8,7 @@ const letters = [
 
 export default function About() {
   return (
-    <section id="about" className="bg-[#faf9f7] py-16 md:py-24">
+    <section id="about" className="bg-[#faf9f7] py-16 md:py-24 border-t border-gray-100">
       <div className="max-w-3xl mx-auto px-6 md:px-8">
         <p className="text-sm tracking-[0.2em] text-red-700/70 text-center mb-4">
           About

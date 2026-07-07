@@ -8,7 +8,7 @@ const partners = [
 
 export default function Professionals() {
   return (
-    <section id="professionals" className="bg-white py-16 md:py-24 border-t border-gray-100">
+    <section id="professionals" className="bg-[#faf9f7] py-16 md:py-24 border-t border-gray-100">
       <div className="max-w-4xl mx-auto px-6 md:px-8">
         <p className="text-sm tracking-[0.2em] text-red-700/70 text-center mb-4">
           士業・専門家との連携
@@ -29,7 +29,7 @@ export default function Professionals() {
           {partners.map((p, i) => (
             <div
               key={i}
-              className="flex items-center gap-4 bg-[#faf9f7] rounded-xl px-6 py-5 border border-gray-100"
+              className="flex items-center gap-4 bg-white rounded-xl px-6 py-5 border border-gray-100"
             >
               <span className="text-lg font-medium text-gray-900 whitespace-nowrap">{p.name}</span>
               <span className="w-px h-6 bg-gray-200" />

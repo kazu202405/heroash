@@ -2,31 +2,31 @@ export default function Hero() {
   return (
     <section className="relative bg-[#faf9f7] pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
       <div className="max-w-6xl mx-auto px-6 md:px-8">
-        {/* ブランド行 */}
-        <div className="flex items-center gap-4 mb-8 justify-center lg:justify-start">
-          <span className="w-10 h-px bg-red-700/40" />
-          <span className="text-sm tracking-[0.2em] text-gray-500">
-            HERO assch ／ ヒーローアッシュ
-          </span>
-        </div>
+        <div className="flex flex-col lg:flex-row lg:items-center lg:justify-between gap-12 lg:gap-16">
+          {/* 左：テキスト一式（左寄せ） */}
+          <div className="w-full lg:max-w-[600px] text-center lg:text-left">
+            {/* ブランド行 */}
+            <div className="flex items-center gap-4 mb-7 justify-center lg:justify-start">
+              <span className="w-10 h-px bg-red-700/40" />
+              <span className="text-sm tracking-[0.2em] text-gray-500">
+                HERO assch ／ ヒーローアッシュ
+              </span>
+            </div>
 
-        {/* 大見出し（全幅・ダイナミック） */}
-        <h1 className="text-center lg:text-left font-semibold text-gray-900 leading-[1.5] tracking-wide mb-10 md:mb-14 text-[1.75rem] md:text-5xl lg:text-[3.5rem]">
-          相続・不動産の
-          <br className="md:hidden" />
-          お困りごとを、
-          <br />
-          <span className="text-red-700">まずはご相談ください。</span>
-        </h1>
+            {/* 大見出し */}
+            <h1 className="font-semibold text-gray-900 leading-[1.5] tracking-wide mb-8 text-[1.7rem] md:text-4xl lg:text-[2.6rem]">
+              相続・不動産の
+              <br className="md:hidden" />
+              お困りごとを、
+              <br />
+              <span className="text-red-700">まずはご相談ください。</span>
+            </h1>
 
-        <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-14">
-          {/* 左：本文 + 連絡先 */}
-          <div className="flex-1 text-center lg:text-left">
-            <p className="text-lg md:text-xl text-gray-700 leading-[2] mb-4">
+            <p className="text-base md:text-lg text-gray-700 leading-[2] mb-4">
               相続した実家、空き家、遠方の不動産、共有名義の家など、
               不動産に関するお悩みを全国対応でサポートします。
             </p>
-            <p className="text-base md:text-lg text-gray-600 leading-[2] mb-9">
+            <p className="text-base md:text-lg text-gray-600 leading-[2] mb-8">
               「どうしたらいいかわからない」という段階から、
               まずはお気軽にご相談いただけます。
             </p>
@@ -54,8 +54,8 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* 右：ブランドキービジュアル */}
-          <div className="flex-shrink-0 order-first lg:order-last w-full max-w-[400px] lg:max-w-[480px]">
+          {/* 右：ブランドキービジュアル（小さめ・右に離す） */}
+          <div className="flex-shrink-0 order-first lg:order-last w-full max-w-[300px] sm:max-w-[340px] lg:max-w-[380px]">
             <img
               src="/hero-keyvisual.png"
               alt="不動産のどうする？を解決する HERO"

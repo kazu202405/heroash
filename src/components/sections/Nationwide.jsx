@@ -6,7 +6,7 @@ const supports = [
 
 export default function Nationwide() {
   return (
-    <section id="nationwide" className="bg-[#faf9f7] py-16 md:py-24">
+    <section id="nationwide" className="bg-white py-16 md:py-24 border-t border-gray-100">
       <div className="max-w-4xl mx-auto px-6 md:px-8">
         <p className="text-sm tracking-[0.2em] text-red-700/70 text-center mb-4">
           全国対応しています
@@ -28,7 +28,7 @@ export default function Nationwide() {
           {supports.map((s, i) => (
             <div
               key={i}
-              className="bg-white rounded-2xl border border-gray-200 px-6 py-7 text-center"
+              className="bg-[#faf9f7] rounded-2xl border border-gray-200 px-6 py-7 text-center"
             >
               <p className="text-xl font-medium text-gray-900 mb-3">{s.title}</p>
               <p className="text-gray-600 leading-relaxed">{s.text}</p>

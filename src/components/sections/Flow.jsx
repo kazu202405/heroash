@@ -23,7 +23,7 @@ const steps = [
 
 export default function Flow() {
   return (
-    <section id="flow" className="bg-white py-16 md:py-24 border-t border-gray-100">
+    <section id="flow" className="bg-[#faf9f7] py-16 md:py-24 border-t border-gray-100">
       <div className="max-w-3xl mx-auto px-6 md:px-8">
         <p className="text-sm tracking-[0.2em] text-red-700/70 text-center mb-4">
           ご相談の流れ
@@ -54,7 +54,7 @@ export default function Flow() {
           ))}
         </ol>
 
-        <div className="mt-6 bg-[#faf9f7] border border-gray-200 rounded-xl px-6 py-5">
+        <div className="mt-6 bg-white border border-gray-200 rounded-xl px-6 py-5">
           <p className="text-gray-600 leading-[1.9]">
             ※ ご相談は無料です。調査や手続きなどで費用が発生する場合は、
             事前にご説明します。
