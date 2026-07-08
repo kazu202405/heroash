@@ -13,10 +13,10 @@ export default function Hero() {
               </span>
             </div>
 
-            {/* 大見出し */}
-            <h1 className="font-semibold text-gray-900 leading-[1.5] tracking-wide mb-8 text-[1.5rem] md:text-3xl lg:text-[2.1rem]">
+            {/* 大見出し（改行位置を全幅で固定。最長行「ワンストップで解決できます！」が折り返さない字サイズに） */}
+            <h1 className="font-semibold text-gray-900 leading-[1.55] tracking-normal md:tracking-wide mb-8 text-[1.25rem] md:text-3xl lg:text-[2.1rem]">
               相続時・離婚時に起こる
-              <br className="md:hidden" />
+              <br />
               様々なお困りごとを、
               <br />
               <span className="text-red-700">ワンストップで解決できます！</span>
@@ -25,9 +25,7 @@ export default function Hero() {
             </h1>
 
             <p className="text-base md:text-lg text-gray-700 leading-[2] mb-4">
-              「相続する実家」、「離婚後もそこに住み続けたい」、「共有名義」、
-              「親族間での争い」、「相続の生前対策」など、
-              提携している各士業と各専門家にて全国対応してます。
+              「相続する実家」、「離婚後もそこに住み続けたい」、「共有名義」、「親族間での争い」、「相続の生前対策」など、提携している各士業と各専門家にて全国対応してます。
             </p>
             <p className="text-base md:text-lg text-gray-600 leading-[2] mb-8">
               「どうしたらいいかわからない」という段階から、
