@@ -14,17 +14,20 @@ export default function Hero() {
             </div>
 
             {/* 大見出し */}
-            <h1 className="font-semibold text-gray-900 leading-[1.5] tracking-wide mb-8 text-[1.7rem] md:text-4xl lg:text-[2.6rem]">
-              相続・不動産の
+            <h1 className="font-semibold text-gray-900 leading-[1.5] tracking-wide mb-8 text-[1.5rem] md:text-3xl lg:text-[2.1rem]">
+              相続時・離婚時に起こる
               <br className="md:hidden" />
-              お困りごとを、
+              様々なお困りごとを、
               <br />
-              <span className="text-red-700">まずはご相談ください。</span>
+              <span className="text-red-700">ワンストップで解決できます！</span>
+              <br />
+              まずはご相談ください
             </h1>
 
             <p className="text-base md:text-lg text-gray-700 leading-[2] mb-4">
-              相続した実家、空き家、遠方の不動産、共有名義の家など、
-              不動産に関するお悩みを全国対応でサポートします。
+              「相続する実家」、「離婚後もそこに住み続けたい」、「共有名義」、
+              「親族間での争い」、「相続の生前対策」など、
+              提携している各士業と各専門家にて全国対応してます。
             </p>
             <p className="text-base md:text-lg text-gray-600 leading-[2] mb-8">
               「どうしたらいいかわからない」という段階から、
@@ -37,7 +40,7 @@ export default function Hero() {
                 <span className="inline-block bg-red-700 text-white text-xs px-3 py-1 rounded-full mr-2 align-middle">
                   相談無料
                 </span>
-                お電話・メールでお気軽にどうぞ
+                電話・メールでお気軽にどうぞ
               </p>
               <a
                 href="tel:09014293396"
@@ -54,8 +57,8 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* 右：ブランドキービジュアル（小さめ・右に離す） */}
-          <div className="flex-shrink-0 order-first lg:order-last w-full max-w-[300px] sm:max-w-[340px] lg:max-w-[380px]">
+          {/* 左：ブランドキービジュアル（ロゴと文言を左右入れ替え） */}
+          <div className="flex-shrink-0 order-first w-full max-w-[300px] sm:max-w-[340px] lg:max-w-[380px]">
             <img
               src="/hero-keyvisual.png"
               alt="不動産のどうする？を解決する HERO"

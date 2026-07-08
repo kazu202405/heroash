@@ -24,7 +24,7 @@ export default function Contact() {
           <span className="inline-block bg-red-700 text-white text-sm px-4 py-1 rounded-full mb-5">
             相談無料
           </span>
-          <p className="text-gray-500 mb-2">お電話でのご相談</p>
+          <p className="text-gray-500 mb-2">電話でのご相談</p>
           <a
             href="tel:09014293396"
             className="block text-3xl md:text-4xl font-semibold text-gray-900 tracking-wide hover:text-red-700 transition-colors"

@@ -63,7 +63,7 @@ export default function Header() {
               className="flex items-center gap-1.5 bg-red-700 text-white text-sm font-medium px-4 py-2 rounded-full"
             >
               <PhoneIcon className="w-3.5 h-3.5" />
-              お電話
+              電話
             </a>
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}

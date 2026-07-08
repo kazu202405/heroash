@@ -12,7 +12,7 @@ export default function Footer() {
               HERO assch 株式会社（ヒーローアッシュ）
             </p>
             <p className="text-sm text-gray-600 leading-relaxed">
-              お電話：
+              電話：
               <a href="tel:09014293396" className="text-gray-900 hover:text-red-700">090-1429-3396</a>
               <span className="mx-2 text-gray-300">/</span>
               <a href="mailto:hero@heroassch.com" className="text-gray-900 hover:text-red-700">hero@heroassch.com</a>

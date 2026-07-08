@@ -14,14 +14,14 @@ export default function WhatWeDo() {
         <SectionHead
           number="03"
           eyebrow="私たちができること"
-          title={<>不動産の「どうしよう」を、<br className="md:hidden" />一緒に整理します。</>}
+          title={<>不動産の「どうする？」を、<br className="md:hidden" />一緒に解決します！</>}
         />
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           <p className="text-lg text-gray-700 leading-[2.1]">
             不動産の売却や買取だけを目的にするのではなく、
-            相続や不動産に関するお困りごとを整理し、
-            解決方法をご提案します。
+            相続時や離婚時の不動産問題を整理し、
+            全国対応にて解決方法をご提案します。
           </p>
 
           <div className="border-l-2 border-red-700/25 pl-6 md:pl-8">

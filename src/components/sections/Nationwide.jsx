@@ -1,7 +1,7 @@
 import SectionHead from '../SectionHead'
 
 const supports = [
-  { title: '電話相談', text: 'お電話でお気軽にご相談いただけます。' },
+  { title: '電話相談', text: '電話でお気軽にご相談いただけます。' },
   { title: 'オンライン相談', text: 'ご自宅にいながら画面越しにご相談できます。' },
   { title: '現地調査', text: '必要に応じて、現地の確認にお伺いします。' },
 ]

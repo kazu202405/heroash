@@ -16,8 +16,12 @@ export default function Professionals() {
           number="04"
           eyebrow="士業・専門家との連携"
           title={<>不動産だけでは<br className="md:hidden" />解決できないことも。</>}
-          lead="相続登記、税金、法律、行政手続き、施設入居など、必要に応じて各分野の専門家と連携して対応します。"
+          lead={<>不動産以外の問題も<span className="text-red-700">ワンストップにて解決</span>します。</>}
         />
+
+        <p className="text-lg text-gray-700 leading-[2] mb-10 -mt-4 max-w-3xl">
+          不動産登記、税務、法務、行政手続き、施設入居など、必要に応じて全国の提携している「士業」・「専門家」と連携してワンストップにて解決します。
+        </p>
 
         <dl className="border-t border-gray-300/70 max-w-3xl">
           {partners.map((p, i) => (
@@ -29,7 +33,7 @@ export default function Professionals() {
         </dl>
 
         <p className="text-lg text-gray-700 leading-[2] mt-10">
-          不動産のことだけでなく、相続に関わるお悩みをまとめてご相談いただけます。
+          不動産のことだけでなく、相続と離婚に関わるお悩みをまとめてご相談いただけます。
         </p>
       </div>
     </section>

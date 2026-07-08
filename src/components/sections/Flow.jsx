@@ -1,7 +1,7 @@
 import SectionHead from '../SectionHead'
 
 const steps = [
-  { title: '無料相談', description: 'まずはお電話またはメールでご相談ください。' },
+  { title: '無料相談', description: 'まずは電話またはメールでご相談ください。' },
   { title: '状況の確認', description: '不動産の場所、名義、相続状況、ご家族の状況などをお聞きします。' },
   { title: '調査', description: '必要に応じて、不動産や権利関係などを確認します。' },
   { title: 'ご提案', description: '売却、買取、保有、整理、専門家連携など、状況に合った方法をご提案します。' },
