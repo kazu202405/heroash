@@ -1,4 +1,5 @@
 import SectionHead from '../SectionHead'
+import { jp } from '../../jp'
 
 const supports = [
   { title: '電話相談', text: '電話でお気軽にご相談いただけます。' },
@@ -14,7 +15,7 @@ export default function Nationwide() {
           number="05"
           eyebrow="全国対応しています"
           title={<>遠くの不動産でも、<br className="md:hidden" />ご相談いただけます。</>}
-          lead="お住まいの地域と、不動産がある場所が離れていてもご相談可能です。遠方にある実家や空き家について、何度も現地へ足を運べない方をサポートします。"
+          lead={jp('お住まいの地域と、不動産がある場所が離れていてもご相談可能です。遠方にある実家や空き家について、何度も現地へ足を運べない方をサポートします。')}
         />
 
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12">

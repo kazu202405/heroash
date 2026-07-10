@@ -1,4 +1,5 @@
 import SectionHead from '../SectionHead'
+import { jp } from '../../jp'
 
 // 2列グリッド（行方向に配置）。左列は上から①②③、右下に「自宅を売却したい」
 const troubles = [
@@ -24,7 +25,7 @@ export default function Divorce() {
           {troubles.map((text, i) => (
             <li key={i} className="flex items-start gap-4 py-5 border-b border-gray-300/70">
               <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-red-700 flex-shrink-0" />
-              <span className="text-lg text-gray-800 leading-relaxed">{text}</span>
+              <span className="text-lg text-gray-800 leading-relaxed">{jp(text)}</span>
             </li>
           ))}
         </ul>

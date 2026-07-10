@@ -1,4 +1,5 @@
 import SectionHead from '../SectionHead'
+import { jp } from '../../jp'
 
 const letters = [
   { char: 'A', word: 'Assist', mean: '支える' },
@@ -21,13 +22,10 @@ export default function About() {
           {/* 左：説明＋代表 */}
           <div>
             <p className="text-lg text-gray-700 leading-[2.1] mb-6">
-              社名の由来ですが「HERO」は、困っている人を助ける“ヒーロー”と、
-              代表の名前の一部「ヒロ」から。
-              「assch」は、5つの言葉の頭文字を取った造語です。
+              {jp('社名の由来ですが「HERO」は、困っている人を助ける“ヒーロー”と、代表の名前の一部「ヒロ」から。「assch」は、5つの言葉の頭文字を取った造語です。')}
             </p>
             <p className="text-lg text-gray-700 leading-[2.1] mb-10">
-              さまざまな問題で困っている人を助けるHEROでありたい。
-              そんな想いを込めています。
+              {jp('さまざまな問題で困っている人を助けるHEROでありたい。そんな想いを込めています。')}
             </p>
 
             {/* 代表（控えめに） */}

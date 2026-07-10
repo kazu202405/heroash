@@ -1,3 +1,5 @@
+import { jp } from '../../jp'
+
 export default function Hero() {
   return (
     <section className="relative bg-[#faf9f7] pt-28 pb-16 md:pt-36 md:pb-24 overflow-hidden">
@@ -25,11 +27,10 @@ export default function Hero() {
             </h1>
 
             <p className="text-base md:text-lg text-gray-700 leading-[2] mb-4">
-              「相続する実家」、「離婚後もそこに住み続けたい」、「共有名義」、「親族間での争い」、「相続の生前対策」など、提携している各士業と各専門家にて全国対応してます。
+              {jp('「相続する実家」、「離婚後もそこに住み続けたい」、「共有名義」、「親族間での争い」、「相続の生前対策」など、提携している各士業と各専門家にて全国対応してます。')}
             </p>
             <p className="text-base md:text-lg text-gray-600 leading-[2] mb-8">
-              「どうしたらいいかわからない」という段階から、
-              まずはお気軽にご相談いただけます。
+              「どうしたらいいかわからない」という段階から、まずはお気軽にご相談いただけます。
             </p>
 
             {/* 連絡先ブロック */}

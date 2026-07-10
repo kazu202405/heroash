@@ -1,4 +1,5 @@
 import SectionHead from '../SectionHead'
+import { jp } from '../../jp'
 
 const questions = [
   '売るべきか、持ち続けるべきか',
@@ -19,9 +20,7 @@ export default function WhatWeDo() {
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-start">
           <p className="text-lg text-gray-700 leading-[2.1]">
-            不動産の売却や買取だけを目的にするのではなく、
-            相続時や離婚時の不動産問題を整理し、
-            全国対応にて解決方法をご提案します。
+            {jp('不動産の売却や買取だけを目的にするのではなく、相続時や離婚時の不動産問題を整理し、全国対応にて解決方法をご提案します。')}
           </p>
 
           <div className="border-l-2 border-red-700/25 pl-6 md:pl-8">
@@ -29,7 +28,7 @@ export default function WhatWeDo() {
             <ul className="space-y-4">
               {questions.map((q, i) => (
                 <li key={i} className="text-lg text-gray-800 leading-8">
-                  <span className="text-red-700">「</span>{q}<span className="text-red-700">」</span>
+                  <span className="text-red-700">「</span>{jp(q)}<span className="text-red-700">」</span>
                 </li>
               ))}
             </ul>

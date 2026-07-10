@@ -1,4 +1,5 @@
 import SectionHead from '../SectionHead'
+import { jp } from '../../jp'
 
 const troubles = [
   '相続した空き家',
@@ -23,7 +24,7 @@ export default function Troubles() {
           {troubles.map((text, i) => (
             <li key={i} className="flex items-start gap-4 py-5 border-b border-gray-200">
               <span className="mt-2.5 w-1.5 h-1.5 rounded-full bg-red-700 flex-shrink-0" />
-              <span className="text-lg text-gray-800 leading-relaxed">{text}</span>
+              <span className="text-lg text-gray-800 leading-relaxed">{jp(text)}</span>
             </li>
           ))}
         </ul>

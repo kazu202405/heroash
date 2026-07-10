@@ -45,6 +45,16 @@ body {
     color: inherit;
     text-decoration: none;
   }
+
+  /* 見出しは行を均等配分し、1〜2文字だけ次行に落ちる不格好な改行を防ぐ（対応ブラウザのみ） */
+  h1, h2, h3 {
+    text-wrap: balance;
+  }
+
+  /* 本文は最終行が極端に短い孤立行になるのを抑える（対応ブラウザのみ） */
+  p {
+    text-wrap: pretty;
+  }
 }
 
 /* テキスト選択 */
