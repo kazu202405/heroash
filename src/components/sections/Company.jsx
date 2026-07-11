@@ -7,7 +7,16 @@ const companyInfo = [
   { label: '本社', value: '〒542-0076 大阪府大阪市中央区難波 2-3-11 ナンバ八千代ビル6階' },
   { label: '電話', value: '090-1429-3396' },
   { label: 'メール', value: 'hero@heroassch.com' },
-  { label: '免許番号', value: '宅地建物取引業者免許：大阪府知事（1）第65883号' },
+  {
+    label: '免許番号',
+    // 「宅地建物取引業者免許：」で改行し、「大阪府知事（1）第65883号」はひとかたまりで2行目に
+    value: (
+      <>
+        宅地建物取引業者免許：
+        <span className="whitespace-nowrap">大阪府知事（1）第65883号</span>
+      </>
+    ),
+  },
   { label: '事業内容', value: '不動産の「どうする？」を解決します' },
 ]
 
