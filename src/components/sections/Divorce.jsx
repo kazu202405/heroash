@@ -31,7 +31,7 @@ export default function Divorce() {
         </ul>
 
         <p className="text-gray-600 text-lg mt-10 leading-[2]">
-          離婚にともなう不動産は、時間が経つほど複雑になりがちです。まずは一度お聞かせください。
+          {jp('離婚にともなう不動産は、時間が経つほど複雑になりがちです。まずは一度お聞かせください。')}
         </p>
       </div>
     </section>

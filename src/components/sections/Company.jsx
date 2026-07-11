@@ -1,4 +1,5 @@
 import SectionHead from '../SectionHead'
+import { jp } from '../../jp'
 
 const companyInfo = [
   { label: '社名', value: 'HERO assch 株式会社（ヒーローアッシュ）' },
@@ -22,7 +23,7 @@ export default function Company() {
               <dt className="text-gray-500 sm:w-36 flex-shrink-0 mb-1 sm:mb-0">
                 {item.label}
               </dt>
-              <dd className="text-gray-900 leading-[1.9]">{item.value}</dd>
+              <dd className="text-gray-900 leading-[1.9]">{jp(item.value)}</dd>
             </div>
           ))}
         </dl>

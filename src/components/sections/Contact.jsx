@@ -1,3 +1,5 @@
+import { jp } from '../../jp'
+
 export default function Contact() {
   return (
     <section id="contact" className="bg-[#8b1520] py-16 md:py-24">
@@ -9,14 +11,14 @@ export default function Contact() {
         </h2>
 
         <p className="text-lg text-white/90 leading-[2.1] mb-4">
-          「まだ何も決まっていない」「売るかどうかもわからない」
+          {jp('「まだ何も決まっていない」「売るかどうかもわからない」')}
           <br className="hidden md:block" />
-          「親族と話がまとまっていない」——
+          {jp('「親族と話がまとまっていない」——')}
         </p>
         <p className="text-lg text-white/90 leading-[2.1] mb-12">
-          そのような段階でも大丈夫です。
+          {jp('そのような段階でも大丈夫です。')}
           <br className="md:hidden" />
-          まずはお気軽にご相談ください。
+          {jp('まずはお気軽にご相談ください。')}
         </p>
 
         {/* 連絡先カード */}

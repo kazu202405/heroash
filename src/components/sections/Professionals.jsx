@@ -26,9 +26,9 @@ export default function Professionals() {
 
         <dl className="border-t border-gray-300/70 max-w-3xl">
           {partners.map((p, i) => (
-            <div key={i} className="flex items-baseline gap-6 py-5 border-b border-gray-300/70">
-              <dt className="text-lg font-medium text-gray-900 w-40 flex-shrink-0">{p.name}</dt>
-              <dd className="text-gray-600">{p.role}</dd>
+            <div key={i} className="flex items-baseline gap-4 sm:gap-6 py-5 border-b border-gray-300/70">
+              <dt className="text-lg font-medium text-gray-900 w-32 sm:w-40 flex-shrink-0">{jp(p.name)}</dt>
+              <dd className="text-gray-600">{jp(p.role)}</dd>
             </div>
           ))}
         </dl>

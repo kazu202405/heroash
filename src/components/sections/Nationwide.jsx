@@ -21,8 +21,8 @@ export default function Nationwide() {
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-8 md:gap-12">
           {supports.map((s, i) => (
             <div key={i} className="border-t-2 border-red-700/40 pt-5">
-              <p className="text-xl font-medium text-gray-900 mb-3">{s.title}</p>
-              <p className="text-gray-600 leading-relaxed">{s.text}</p>
+              <p className="text-xl font-medium text-gray-900 mb-3">{jp(s.title)}</p>
+              <p className="text-gray-600 leading-relaxed">{jp(s.text)}</p>
             </div>
           ))}
         </div>

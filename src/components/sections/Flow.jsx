@@ -1,4 +1,5 @@
 import SectionHead from '../SectionHead'
+import { jp } from '../../jp'
 
 const steps = [
   { title: '無料相談', description: 'まずは電話またはメールでご相談ください。' },
@@ -28,15 +29,15 @@ export default function Flow() {
               </div>
               {/* 中身 */}
               <div className="pb-9 pt-1.5">
-                <h3 className="text-xl font-semibold text-gray-900 mb-2">{step.title}</h3>
-                <p className="text-gray-700 leading-[1.9]">{step.description}</p>
+                <h3 className="text-xl font-semibold text-gray-900 mb-2">{jp(step.title)}</h3>
+                <p className="text-gray-700 leading-[1.9]">{jp(step.description)}</p>
               </div>
             </li>
           ))}
         </ol>
 
         <p className="text-gray-500 leading-[1.9] mt-2 max-w-3xl">
-          ※ ご相談は無料です。調査や手続きなどで費用が発生する場合は、事前にご説明します。
+          {jp('※ ご相談は無料です。調査や手続きなどで費用が発生する場合は、事前にご説明します。')}
         </p>
       </div>
     </section>

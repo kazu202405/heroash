@@ -30,7 +30,7 @@ export default function Troubles() {
         </ul>
 
         <p className="text-gray-600 text-lg mt-10 leading-[2]">
-          ひとつでも当てはまれば、まずは一度お聞かせください。
+          {jp('ひとつでも当てはまれば、まずは一度お聞かせください。')}
         </p>
       </div>
     </section>
